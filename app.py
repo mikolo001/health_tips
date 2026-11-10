@@ -7,14 +7,14 @@ st.set_page_config(
 )
 
 assistant_page = st.Page(
-    "pages/health_ass.py",
+    "Pages/health_ass.py",
     title="Health Assistant",
     icon="💬",
     default=True
 )
 
 analyst_page = st.Page(
-    "pages/health_analyst.py",
+    "Pages/health_analyst.py",
     title="Health Data Analyst",
     icon="📊"
 )
