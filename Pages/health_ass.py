@@ -5,7 +5,7 @@ st.title("💬 Health Assistant")
 
 st.write(
     "Ask questions about general health, wellness, "
-    "symptoms, nutrition, and medicines."
+    "symptoms, nutrition, well-being and medicines."
 )
 
 st.warning(
