@@ -1,0 +1,7 @@
+streamlit
+openai
+mysql-connector-python
+python-dotenv
+requests
+pandas
+numpy
