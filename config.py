@@ -1,13 +1,16 @@
-
+import os
 import streamlit as st
 import mysql.connector as sql
 from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()  # Load environment variables from .env file
 
 # ==========================================
 # GROQ CONFIGURATION
 # ==========================================
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 MODEL_NAME = "openai/gpt-oss-20b"
 
 client = OpenAI(
@@ -15,7 +18,7 @@ client = OpenAI(
     base_url="https://api.groq.com/openai/v1"
 )
 
-TELEGRAM_BOT_TOKEN = "8909184350:AAFT4X9Ta2acvRMr1x8k07Se4ULm4g0jnLs"
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 
 HEALTH_INSTRUCTIONS = """
 You are HealthMate AI, a health information assistant.
